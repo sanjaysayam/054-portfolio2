@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+header {
+    background-color: #f1eaea;
+    padding: 15px;
+    height:25px;
+}
+header nav {
+    float: right;
+}
+
+header nav a {
+    color: #292525;
+    padding: 0 5px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+#infoImage {
+    cursor: pointer;
+}
+body{
+    display: flex;
+}
+body{
+    background-color: #222831;
+}
+.inner{
+    padding-top:60px ;
+}
+.header{
+    text-align: center;
+    color:#fff;
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.header::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: aquamarine;
+    border-radius: 2px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap:1.5rem;
+    font-size: 1.5rem;
+}
+.project-box{
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    background-color: #393e46;
+    border-radius: 20px;
+    padding: 50px;
+    margin-top: 10px;
+    aspect-ratio: 3/4;
+}
+.project-box:hover{
+    background-color: orange;
+    transition: 0.5s ;
+    color: black
+}
+.project-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5 rem;
+    margin-bottom: 0.5rem;
+}
+.project-icon{
+    width:200px;
+}
+#matterBox {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: x-large;
+}
+
+
+#matterBox1 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: x-large;
+}
+ #matterBox2 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+#matterBox3 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}

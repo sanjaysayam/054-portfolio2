@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Projects</title>
+    <link rel="stylesheet" href="project.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home page</a>
+        </nav>
+    </header>
+
+    <div class="inner">
+        <div class="header">
+            <h1>My Projects and Certifications</h1>
+        </div>
+        <div class="container">
+            <div class="project-box">
+                <div class="project-title">
+                    <div class="img">
+                        <img id="infoImage" src="ml.jpg"  class="project-icon">
+                    </div>
+                    <h4> Machine Learning</h4>
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="project-title">
+                    <div class="img">
+                        <img id="infoImage1" src="pg.png"  class="project-icon">
+                    </div>
+                    <h4>Full Stack Development</h4>
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="project-title">
+                    <div class="img">
+                        <img id="infoImage2" src="./aiml2.webp"  class="project-icon">
+                    </div>
+                    <h4>Foundation of AI</h4>
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="project-title">
+                    <div class="img">
+                        <img id="infoImage3" src="./fsd1.png"  class="project-icon">
+                    </div>
+                    <h4>Web Devoplment</h4>
+                </div>
+            </div>       
+        </div>
+    </div>
+    <div id="matterBox">
+        <h2>Project 1</h2>
+        <p>The project is done on the basis of AI</p>
+        <p>"Developing an AI project focused on natural language processing,enabling advanced sentiment analysis and text classification capabilities.
+        <p>In this ,I made a chatbot this was my first project for SIH  for this we used flask for backend and basic machine learning tools for training the bot</p>
+    </div>
+
+    <div id="matterBox1">
+        <h2>Project 2</h2>
+        <p>The project is on fullstack development</p>
+        <p>I have done a project on full stack development in which i have created a webpage for pg hostels.this was my 2nd project in which i have used html,css,bootstrap,javascript,MongoDB</p>
+        <p>This is just for reference</p>
+    </div>
+
+    <div id="matterBox2">
+        <h2>Certificate 1</h2>
+        <img src="Ai.png">
+    </div>
+    <div id="matterBox3">
+        <h2>Certificate 2</h2>
+        <img src="fsd.png">
+    </div>
+
+    <script>
+        
+        var infoImage = document.getElementById('infoImage');
+        var infoBox = document.getElementById('matterBox');
+
+        
+        infoImage.addEventListener('click', function() {
+            if (matterBox.style.display === 'block') {
+                matterBox.style.display = 'none';
+            } else {
+                matterBox.style.display = 'block';
+            }
+        });
+
+        
+        window.addEventListener('click', function(event) {
+            if (event.target !== infoImage && event.target !== matterBox) {
+                matterBox.style.display = 'none';
+            }
+        });
+        
+        var infoImage1 = document.getElementById('infoImage1');
+        var infoBox1 = document.getElementById('matterBox1');
+
+        
+        infoImage1.addEventListener('click', function() {
+            if (matterBox1.style.display === 'block') {
+                matterBox1.style.display = 'none';
+            } else {
+                matterBox1.style.display = 'block';
+            }
+        });
+        window.addEventListener('click', function(event) {
+            if (event.target !== infoImage1 && event.target !== matterBox1) {
+                matterBox1.style.display = 'none';
+            }
+        });
+        var infoImage2 = document.getElementById('infoImage2');
+        var infoBox2 = document.getElementById('matterBox2');
+
+        infoImage2.addEventListener('click', function() {
+            if (matterBox2.style.display === 'block') {
+                matterBox2.style.display = 'none';
+            } else {
+                matterBox2.style.display = 'block';
+            }
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target !== infoImage2 && event.target !== matterBox2) {
+                matterBox2.style.display = 'none';
+            }
+        });
+
+        var infoImage3 = document.getElementById('infoImage3');
+        var infoBox3 = document.getElementById('matterBox3');
+
+        infoImage3.addEventListener('click', function() {
+            if (matterBox3.style.display === 'block') {
+                matterBox3.style.display = 'none';
+            } else {
+                matterBox3.style.display = 'block';
+            }
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target !== infoImage3 && event.target !== matterBox3) {
+                matterBox3.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+
